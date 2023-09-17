@@ -40,7 +40,7 @@ if go_play == "no":
 
 #On 'yes', lets play:
 elif go_play == "yes":
-    # print(go_play)
+    #Build tension in pre-game: (Code needs to be more Pythonic!)
     print("Let's go play! Please wait while we randomly choose first play!")
     time.sleep(1)
     print(".")
@@ -48,6 +48,8 @@ elif go_play == "yes":
     print("..")
     time.sleep(1)
     print("...")
+
+    #Random function to choose player:
     player_choice = random.randint(0,1)
     if player_choice == 0:
         print("Computer gets first play")
